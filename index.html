@@ -5,9 +5,12 @@ layout: page
 
 <input id="photo" type="file">
 <div id="results"></div>
+<!--i need a module import for the gradio client for html-->
+<script type="module" src="node_modules/@gradio/client/dist/index.js"></script>
+
 <script>
 
-import { client } from "@gradio/client";
+
 
 /*const response_0 = await fetch("https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png");
 const exampleImage = await response_0.blob();
